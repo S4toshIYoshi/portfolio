@@ -3,6 +3,8 @@ import style from './RecentProjects.module.scss';
 import Heading from '../../../UI/Heading';
 import { LanguageContext } from '../../../providers/LanguageProvider';
 import Button from '../../../UI/Button';
+import CardProject from '../../cardProject/CardProject';
+import { PROJECTS } from '../../../data/myProjects';
 
 type Props = {};
 
@@ -20,7 +22,19 @@ const RecentProjects = () => {
 				<Heading>{headingText}</Heading>
 				<Button>{buttonText}</Button>
 			</div>
-			<div></div>
+			<div className={style.projects}>
+				{PROJECTS.map(el => (
+					<CardProject
+						key={el.slug}
+						slug={el.slug}
+						number={el.number}
+						description={el.description}
+						heading={el.heading}
+						category={el.category}
+						img={el.img}
+					/>
+				))}
+			</div>
 		</section>
 	);
 };

@@ -1,0 +1,25 @@
+.card {
+	border-radius: 32px;
+	background: #000;
+	display: flex;
+
+	justify-content: space-between;
+
+	padding: 40px;
+}
+
+.wrapperCategory {
+	display: flex;
+	gap: 10px;
+}
+
+.wrapperImg {
+	width: 100%;
+}
+
+.content {
+	display: flex;
+	flex-flow: column;
+
+	justify-content: space-between;
+}

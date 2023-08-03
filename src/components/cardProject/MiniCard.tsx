@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import style from './MiniCard.scss';
+import style from './MiniCard.module.scss';
 type Props = {
 	children: ReactNode;
 };
