@@ -1,31 +1,28 @@
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import HomeTemplete from "./Routing/HomeTemplete";
-import ContactTemplete from "./Routing/ContactTemplete";
-import AboutTemplete from "./Routing/AboutTemplete";
-import ProjectsTemplete from "./Routing/ProjectsTemplete";
-import AboutProjectTemplete from "./Routing/AboutProjectTemplete";
-import NotFound from "./Routing/NotFound";
-import MainTemplete from "./Routing/MainTemplete";
+import { Routes, Route } from 'react-router-dom';
+import './globalStyle/App.css';
+import HomePage from './Routing/HomePage';
+import ContactPage from './Routing/ContactPage';
+import AboutPage from './Routing/AboutPage';
+import ProjectsPage from './Routing/ProjectsPage';
+import AboutProjectPage from './Routing/AboutProjectPage';
+import NotFound from './Routing/NotFound';
+import MainPage from './Routing/MainLayout';
 
 function App() {
-  return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<MainTemplete />}>
-          <Route index={true} element={<HomeTemplete />} />
-          <Route path="contact" element={<ContactTemplete />} />
-          <Route path="about" element={<AboutTemplete />} />
-          <Route path="projects" element={<ProjectsTemplete />} />
-          <Route
-            path="projects/:projectName"
-            element={<AboutProjectTemplete />}
-          />
-        </Route>
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<Routes>
+				<Route path='/' element={<MainPage />}>
+					<Route index={true} element={<HomePage />} />
+					<Route path='contact' element={<ContactPage />} />
+					<Route path='about' element={<AboutPage />} />
+					<Route path='projects' element={<ProjectsPage />} />
+					<Route path='/:projectName' element={<AboutProjectPage />} />
+				</Route>
+				<Route path='*' element={<NotFound />} />
+			</Routes>
+		</div>
+	);
 }
 
 export default App;

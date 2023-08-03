@@ -1,0 +1,45 @@
+.switcher {
+	position: relative;
+	display: flex;
+	width: 80px;
+	justify-content: space-between;
+
+	background-color: #363f46;
+	border-radius: 10px;
+
+	cursor: pointer;
+
+	&Item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 50%;
+
+		color: #fff;
+		text-align: center;
+		font-family: 'DM Sans', sans-serif;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 27px;
+
+		z-index: 2;
+	}
+}
+
+.selectBox {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	border-radius: 10px;
+	top: 0;
+	left: 0;
+	background-color: #118da8;
+
+	transition: transform 0.2s ease-in-out;
+}
+
+.selectBox.langEn {
+	transform: translateX(100%);
+}
