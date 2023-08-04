@@ -1,3 +1,15 @@
 .skillSet {
 	margin-top: 90px;
 }
+.skills {
+	margin-top: 40px;
+
+	display: flex;
+	flex-flow: row wrap;
+	gap: 20px;
+}
+
+.cardSkills {
+	padding: 10px 15px;
+	border-radius: 20px;
+}

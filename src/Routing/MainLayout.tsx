@@ -6,7 +6,14 @@ const MainLayout = () => {
 	return (
 		<div
 			className='container'
-			style={{ width: '90%', margin: '55px auto 115px auto' }}
+			style={{
+				width: '90%',
+				margin: '55px auto 0 auto',
+				minHeight: '110vh',
+				display: 'flex',
+				justifyContent: 'space-between',
+				flexDirection: 'column'
+			}}
 		>
 			<NavBar />
 			<Outlet />

@@ -1,0 +1,31 @@
+.feedBack {
+	margin-top: 100px;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.card {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contactInfo {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	& div {
+		display: flex;
+		align-items: center;
+		column-gap: 10px;
+	}
+}
+.download {
+	margin-top: 50px;
+
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
