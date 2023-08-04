@@ -1,12 +1,13 @@
 import React, { FC, useContext } from 'react';
 import style from './CardProject.module.scss';
 import MiniCard from './MiniCard';
-import Marking from './Marking';
+import Marking from '../../UI/Marking';
 import Heading from '../../UI/Heading';
 import Description from '../../UI/Description';
 import Button from '../../UI/Button';
 import { LanguageContext } from '../../providers/LanguageProvider';
 import { ICardProject } from '../../types/project.interface';
+import Card from '../../UI/Card';
 
 const CardProject: FC<ICardProject> = ({
 	number,
@@ -19,7 +20,7 @@ const CardProject: FC<ICardProject> = ({
 	const { language } = useContext(LanguageContext);
 
 	return (
-		<div className={style.card}>
+		<Card className={style.card} styles={false}>
 			<div className={style.wrapperImg}>
 				<img src={img} alt={slug} />
 			</div>
@@ -38,7 +39,7 @@ const CardProject: FC<ICardProject> = ({
 					</Button>
 				</div>
 			</div>
-		</div>
+		</Card>
 	);
 };
 

@@ -1,0 +1,24 @@
+.aboutSection {
+	margin-top: 200px;
+	display: flex;
+	justify-content: space-between;
+	column-gap: 60px;
+}
+
+.content {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.image {
+	width: 100%;
+}
+
+.wrapperDescription {
+	display: flex;
+	flex-direction: column;
+
+	row-gap: 20px;
+}
