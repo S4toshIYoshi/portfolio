@@ -5,6 +5,8 @@ import { LanguageContext } from '../../../providers/LanguageProvider';
 import style from './Header.module.scss';
 import HeadingHeader from './HeadingHeader';
 import ImageHeading from './ImageHeading';
+import { Link } from 'react-router-dom';
+import resume from '../../../data/download/Kroshechkin_Nikolay.pdf';
 
 const Header = () => {
 	const { language } = useContext(LanguageContext);
@@ -24,10 +26,20 @@ const Header = () => {
 			<div className={style.wrapper}>
 				<HeadingHeader />
 				<div className={style.button}>
-					<Button>{language === 'RU' ? 'Связаться' : 'Contact'}</Button>
+					<Button>
+						<Link to='/contact' style={{ color: '#fff' }}>
+							{language === 'RU' ? 'Связаться' : 'Contact'}
+						</Link>
+					</Button>
 					<div className={style.download}>
 						<Button>
-							{language === 'RU' ? 'Скачать резюме' : 'download resume'}
+							<a
+								href={resume}
+								download='Nikolay_Kroshechkin'
+								style={{ color: '#fff' }}
+							>
+								{language === 'RU' ? 'Скачать резюме' : 'download resume'}
+							</a>
 						</Button>
 						<Description>.pdf</Description>
 					</div>

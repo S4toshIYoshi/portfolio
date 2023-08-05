@@ -8,6 +8,7 @@ import { LanguageContext } from '../../providers/LanguageProvider';
 import { ICardProject } from '../../types/project.interface';
 import Card from '../../UI/Card';
 import HeadingCard from './HeadingCard';
+import { Link } from 'react-router-dom';
 
 const CardProject: FC<ICardProject> = ({
 	number,
@@ -33,8 +34,10 @@ const CardProject: FC<ICardProject> = ({
 				<Marking>{`project ${number}`}</Marking>
 				<HeadingCard>{heading}</HeadingCard>
 				<Description className={style.description}>{description}</Description>
-				<Button onClick={() => alert(slug)}>
-					{language === 'RU' ? 'Подробнее' : 'View Detals'}
+				<Button>
+					<Link to={`/projects/${slug}`} style={{ color: '#fff' }}>
+						{language === 'RU' ? 'Подробнее' : 'View Detals'}
+					</Link>
 				</Button>
 			</div>
 		</Card>

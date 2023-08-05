@@ -6,6 +6,7 @@ import Heading from '../../../UI/Heading';
 import Description from '../../../UI/Description';
 import { LanguageContext } from '../../../providers/LanguageProvider';
 import { ABOUT_BRIEFLY } from '../../../data/about';
+import { Link } from 'react-router-dom';
 
 const AboutSection = () => {
 	const { language } = useContext(LanguageContext);
@@ -18,9 +19,11 @@ const AboutSection = () => {
 	return (
 		<section className={style.aboutSection}>
 			<div className={style.content}>
-				<ButtonVector>
-					{language === 'RU' ? 'Узнать больше' : 'learn more'}
-				</ButtonVector>
+				<Link to='/about'>
+					<ButtonVector>
+						{language === 'RU' ? 'Узнать больше' : 'learn more'}
+					</ButtonVector>
+				</Link>
 				<Heading>
 					{language === 'RU' ? ABOUT_BRIEFLY.nameRu : ABOUT_BRIEFLY.nameEn}
 				</Heading>

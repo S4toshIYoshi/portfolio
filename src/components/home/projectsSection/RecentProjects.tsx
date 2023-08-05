@@ -5,6 +5,7 @@ import { LanguageContext } from '../../../providers/LanguageProvider';
 import Button from '../../../UI/Button';
 import CardProject from '../../cardProject/CardProject';
 import { PROJECTS } from '../../../data/myProjects';
+import { Link } from 'react-router-dom';
 
 type Props = {};
 
@@ -20,7 +21,11 @@ const RecentProjects = () => {
 		<section className={style.section}>
 			<div className={style.header}>
 				<Heading>{headingText}</Heading>
-				<Button className={style.button}>{buttonText}</Button>
+				<Button className={style.button}>
+					<Link to='/projects' style={{ color: '#fff' }}>
+						{buttonText}
+					</Link>
+				</Button>
 			</div>
 			<div className={style.projects}>
 				{PROJECTS.map(el => (
