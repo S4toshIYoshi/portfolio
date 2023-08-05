@@ -11,16 +11,16 @@ type Props = {};
 const RecentProjects = () => {
 	const { language } = useContext(LanguageContext);
 
-	const headingText =
+	const headingText: string =
 		language === 'RU' ? 'Недавние преокты' : 'Recent projects';
 
-	const buttonText = language === 'RU' ? 'посмотреть все' : 'view all';
+	const buttonText: string = language === 'RU' ? 'посмотреть все' : 'view all';
 
 	return (
 		<section className={style.section}>
 			<div className={style.header}>
 				<Heading>{headingText}</Heading>
-				<Button>{buttonText}</Button>
+				<Button className={style.button}>{buttonText}</Button>
 			</div>
 			<div className={style.projects}>
 				{PROJECTS.map(el => (
@@ -28,12 +28,15 @@ const RecentProjects = () => {
 						key={el.slug}
 						slug={el.slug}
 						number={el.number}
-						description={el.description}
-						heading={el.heading}
+						description={
+							language === 'RU' ? el.descriptionRu : el.descriptionEn
+						}
+						heading={language === 'RU' ? el.headingRu : el.headingEn}
 						category={el.category}
 						img={el.img}
 					/>
 				))}
+				<Button className={style.buttonMobile}>{buttonText}</Button>
 			</div>
 		</section>
 	);

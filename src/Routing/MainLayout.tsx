@@ -1,20 +1,11 @@
 import Footer from '../components/Footer';
 import NavBar from '../components/navbar/NavBar';
 import { Outlet } from 'react-router-dom';
+import style from './MainLayout.module.scss';
 
 const MainLayout = () => {
 	return (
-		<div
-			className='container'
-			style={{
-				width: '90%',
-				margin: '55px auto 0 auto',
-				minHeight: '110vh',
-				display: 'flex',
-				justifyContent: 'space-between',
-				flexDirection: 'column'
-			}}
-		>
+		<div className={style.container}>
 			<NavBar />
 			<Outlet />
 			<Footer />

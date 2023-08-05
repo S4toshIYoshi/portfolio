@@ -15,3 +15,16 @@
 	flex-flow: column nowrap;
 	row-gap: 40px;
 }
+
+.button {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.button {
+		display: block;
+	}
+	.buttonMobile {
+		display: none;
+	}
+}

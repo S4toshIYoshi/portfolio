@@ -1,18 +1,25 @@
+.wrapper {
+	text-align: center;
+}
+
 .heading {
 	color: #fff;
-	font-size: 50px;
+	font-size: 40px;
 	font-style: normal;
-	font-weight: 700;
-	line-height: 60px; /* 125.714% */
-	letter-spacing: 3.2px;
+	font-weight: 400;
+	line-height: 50px; /* 125.714% */
+	letter-spacing: 1.2px;
 }
 
 @media (min-width: 768px) {
+	.wrapper {
+		text-align: left;
+	}
 	.heading {
 		color: #fff;
 		font-size: 64px;
 		font-style: normal;
-		font-weight: 700;
+		font-weight: 400;
 		line-height: 79.2px; /* 123.75% */
 		letter-spacing: 2.88px;
 	}

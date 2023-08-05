@@ -22,6 +22,7 @@ const Footer = () => {
 					<BsFillTelephoneFill />
 				</div>
 			</div>
+
 			<ul className={style.list}>
 				{LINKS_NAV.map(el => {
 					return (
@@ -33,6 +34,7 @@ const Footer = () => {
 					);
 				})}
 			</ul>
+
 			<div className={style.contact}>
 				<div>
 					<SiGmail fill='#fff' />{' '}

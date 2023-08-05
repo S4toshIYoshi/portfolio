@@ -11,9 +11,17 @@ const Header = () => {
 
 	return (
 		<header className={style.header}>
+			<div className={style.buttonModile}>
+				<Button>{language === 'RU' ? 'Связаться' : 'Contact'}</Button>
+				<div className={style.download}>
+					<Button>
+						{language === 'RU' ? 'Скачать резюме' : 'download resume'}
+					</Button>
+					<Description>.pdf</Description>
+				</div>
+			</div>
 			<ImageHeading />
 			<div className={style.wrapper}>
-				<div></div>
 				<HeadingHeader />
 				<div className={style.button}>
 					<Button>{language === 'RU' ? 'Связаться' : 'Contact'}</Button>
@@ -24,7 +32,6 @@ const Header = () => {
 						<Description>.pdf</Description>
 					</div>
 				</div>
-				<div></div>
 			</div>
 		</header>
 	);

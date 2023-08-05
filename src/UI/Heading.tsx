@@ -6,7 +6,7 @@ type Props = {
 };
 
 const Heading = ({ children }: Props) => {
-	return <h3 className={style.heading}>{children}</h3>;
+	return <h2 className={style.heading}>{children}</h2>;
 };
 
 export default Heading;

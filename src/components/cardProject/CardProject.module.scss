@@ -4,6 +4,8 @@
 	display: flex;
 
 	justify-content: space-between;
+	flex-direction: column;
+	gap: 30px;
 
 	padding: 40px;
 }
@@ -14,6 +16,10 @@
 }
 
 .wrapperImg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 	width: 100%;
 
 	border-radius: 32px;
@@ -22,6 +28,29 @@
 .content {
 	display: flex;
 	flex-flow: column;
+	gap: 20px;
 
 	justify-content: space-between;
+	align-items: center;
+}
+
+.description {
+	display: none;
+}
+
+@media (min-width: 1024px) {
+	.card {
+		flex-direction: row;
+	}
+
+	.wrapperImg {
+	}
+
+	.content {
+		align-items: flex-start;
+	}
+
+	.description {
+		display: block;
+	}
 }

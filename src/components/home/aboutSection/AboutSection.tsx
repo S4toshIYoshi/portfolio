@@ -1,25 +1,33 @@
-import React from 'react';
+import { useContext } from 'react';
 import style from './AboutSection.module.scss';
 import image from '../../../images/feedBack.png';
 import ButtonVector from '../../../UI/ButtonVector';
 import Heading from '../../../UI/Heading';
 import Description from '../../../UI/Description';
+import { LanguageContext } from '../../../providers/LanguageProvider';
+import { ABOUT_BRIEFLY } from '../../../data/about';
 
 const AboutSection = () => {
+	const { language } = useContext(LanguageContext);
+
+	const dataDescription: string[] =
+		language === 'RU'
+			? ABOUT_BRIEFLY.descriptionRu
+			: ABOUT_BRIEFLY.descriptionEn;
+
 	return (
 		<section className={style.aboutSection}>
 			<div className={style.content}>
-				<ButtonVector>Узнать больше</ButtonVector>
-				<Heading>Николай Крошечкин</Heading>
+				<ButtonVector>
+					{language === 'RU' ? 'Узнать больше' : 'learn more'}
+				</ButtonVector>
+				<Heading>
+					{language === 'RU' ? ABOUT_BRIEFLY.nameRu : ABOUT_BRIEFLY.nameEn}
+				</Heading>
 				<div className={style.wrapperDescription}>
-					<Description>
-						Разработчик с глубокими знаниями JavaScript/TypeScript, React,
-						функционального и объектно ориентированного программирования.{' '}
-					</Description>
-					<Description>
-						Получаю профильное образование, занимаюсь frontend-разработкой. Так
-						же есть не коммерческий опыт с языками С, C++ и С#.
-					</Description>
+					{dataDescription.map((el, idx) => {
+						return <Description key={idx}>{el}</Description>;
+					})}
 				</div>
 			</div>
 			<div className={style.image}>

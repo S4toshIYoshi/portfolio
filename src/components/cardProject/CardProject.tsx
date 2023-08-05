@@ -2,12 +2,12 @@ import React, { FC, useContext } from 'react';
 import style from './CardProject.module.scss';
 import MiniCard from './MiniCard';
 import Marking from '../../UI/Marking';
-import Heading from '../../UI/Heading';
 import Description from '../../UI/Description';
 import Button from '../../UI/Button';
 import { LanguageContext } from '../../providers/LanguageProvider';
 import { ICardProject } from '../../types/project.interface';
 import Card from '../../UI/Card';
+import HeadingCard from './HeadingCard';
 
 const CardProject: FC<ICardProject> = ({
 	number,
@@ -31,13 +31,11 @@ const CardProject: FC<ICardProject> = ({
 					))}
 				</div>
 				<Marking>{`project ${number}`}</Marking>
-				<Heading>{heading}</Heading>
-				<Description>{description}</Description>
-				<div className={style.wrapperButton}>
-					<Button onClick={() => alert(slug)}>
-						{language === 'RU' ? 'Подробнее' : 'View Detals'}
-					</Button>
-				</div>
+				<HeadingCard>{heading}</HeadingCard>
+				<Description className={style.description}>{description}</Description>
+				<Button onClick={() => alert(slug)}>
+					{language === 'RU' ? 'Подробнее' : 'View Detals'}
+				</Button>
 			</div>
 		</Card>
 	);

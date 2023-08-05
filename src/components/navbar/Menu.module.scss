@@ -1,11 +1,17 @@
 .links {
 	display: flex;
-	column-gap: 40px;
+	flex-direction: column;
+	gap: 40px;
+}
+@media (min-width: 768px) {
+	.links {
+		flex-direction: row;
+	}
 }
 .link {
 	color: #fff;
 	font-family: 'DM Sans', sans-serif;
-	font-size: 17px;
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 27px;
@@ -13,6 +19,12 @@
 
 	&:hover {
 		color: rgba($color: #118da8, $alpha: 0.5);
+	}
+}
+
+@media (min-width: 768px) {
+	.link {
+		font-size: 17px;
 	}
 }
 .active {

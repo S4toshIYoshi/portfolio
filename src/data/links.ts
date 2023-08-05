@@ -1,11 +1,6 @@
-export interface ILinks {
-	nameRU: string;
-	NameEN: string;
-	slug: string;
-	url: string;
-}
+import { ILinks } from '../types/links.interface';
 
-export const LINKS_NAV = [
+export const LINKS_NAV: ILinks[] = [
 	{
 		nameRU: 'Главная',
 		nameEN: 'Home',

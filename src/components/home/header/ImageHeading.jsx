@@ -1,12 +1,11 @@
 import { useContext } from 'react';
 import image from '../../../images/heading.png';
 import { LanguageContext } from '../../../providers/LanguageProvider';
+import style from './ImageHeading.module.scss';
 
 const ImageHeading = () => {
-	const { language } = useContext(LanguageContext);
-
 	return (
-		<div style={{ width: language === 'RU' ? '80%' : '66.5%' }}>
+		<div className={style.wrapper}>
 			<img src={image} alt='heading image' />
 		</div>
 	);

@@ -1,24 +1,30 @@
-import { ICardProject } from '../types/project.interface';
+import { IProject } from '../types/project.interface';
 import moveApp from '../images/movieApp.png';
 import gallery from '../images/gallery.png';
 
-export const PROJECTS: ICardProject[] = [
+export const PROJECTS: IProject[] = [
 	{
-		number: 3,
-		heading: 'Приложение для поиска фильмов',
-		description:
-			'Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.',
+		number: 1,
+		headingRu: 'Поиск фильмов',
+		headingEn: 'Movie search',
+		descriptionRu:
+			'В приложении есть подборки популярных фильмов, топы, поиск по категориям и уникальная функция которая подбирает случайный фильм. Также в приложении удобнйы адаптивный интерфес и отличны дизан',
+		descriptionEn:
+			'The application has selections of popular movies, tops, search by category and a unique feature that selects a random movie. Also, the application has a convenient adaptive interface and excellent design.',
 		slug: 'movie-app',
-		category: ['react', 'java script'],
+		category: ['react app'],
 		img: moveApp
 	},
 	{
 		number: 2,
-		heading: 'Онлайн галерея',
-		description:
-			'Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.',
-		slug: 'movie-app',
-		category: ['react', 'java script'],
+		headingRu: 'Онлайн Галерея',
+		headingEn: 'Online gallery',
+		descriptionRu:
+			'Этот сайт предлагает удобный и интуитивно понятный минималистичный интерфейс, который позволяет любителям искусства легко находить и наслаждаться произведениями искусства из разных эпох и жанров.',
+		descriptionEn:
+			'My site offers a user-friendly and accessible minimalistic interface that makes it easy for art lovers to find and enjoy works of art from different eras and genres.',
+		slug: 'gallery-app',
+		category: ['react app'],
 		img: gallery
 	}
 ];

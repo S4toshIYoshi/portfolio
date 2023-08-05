@@ -7,14 +7,15 @@ interface ISwitcher {
 	first: string;
 	last: string;
 	action: MouseEventHandler;
+	className?: string;
 }
 
-const Switcher: FC<ISwitcher> = ({ first, last, action }) => {
+const Switcher: FC<ISwitcher> = ({ first, last, action, className }) => {
 	const { language, setLanguage } = useContext(LanguageContext);
 	return (
 		<div
 			onClick={() => setLanguage(language === 'EN' ? 'RU' : 'EN')}
-			className={style.switcher}
+			className={cn(style.switcher, className)}
 		>
 			<div className={style.switcherItem}>{first}</div>
 			<div className={style.switcherItem}>{last}</div>

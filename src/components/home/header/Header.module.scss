@@ -2,8 +2,9 @@
 	margin-top: 80px;
 
 	display: flex;
+	flex-direction: column-reverse;
 	justify-content: space-between;
-	column-gap: 60px;
+	gap: 60px;
 	width: 100%;
 }
 
@@ -18,7 +19,26 @@
 	align-items: center;
 	gap: 10px;
 }
+
 .button {
+	display: none;
+	column-gap: 30px;
+}
+
+.buttonModile {
 	display: flex;
 	column-gap: 30px;
+}
+
+@media (min-width: 768px) {
+	.header {
+		flex-direction: row;
+	}
+	.button {
+		display: flex;
+	}
+	.buttonModile {
+		display: none;
+		column-gap: 30px;
+	}
 }

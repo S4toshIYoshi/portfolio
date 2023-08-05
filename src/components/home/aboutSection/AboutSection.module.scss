@@ -13,6 +13,9 @@
 }
 
 .image {
+	display: none;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
 }
 
@@ -21,4 +24,10 @@
 	flex-direction: column;
 
 	row-gap: 20px;
+}
+
+@media (min-width: 990px) {
+	.image {
+		display: flex;
+	}
 }
