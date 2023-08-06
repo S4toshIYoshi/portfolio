@@ -12,7 +12,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Routes>
-				<Route path='/portfolio' element={<MainPage />}>
+				<Route path='portfolio/' element={<MainPage />}>
 					<Route index={true} element={<HomePage />} />
 					<Route path='contact' element={<ContactPage />} />
 					<Route path='about' element={<AboutPage />} />
