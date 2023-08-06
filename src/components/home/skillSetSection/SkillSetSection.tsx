@@ -18,6 +18,7 @@ const SkillSetSection = (props: Props) => {
 					{SKILLS.map(el => {
 						return (
 							<div
+								key={el.skill}
 								className={style.cardSkills}
 								style={{
 									background: `${el.color}`,

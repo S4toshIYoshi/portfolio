@@ -9,11 +9,13 @@ const HeadingHeader = () => {
 		<div className={style.heading}>
 			{language === 'RU' ? (
 				<h1>
-					Привет! Меня зовут <span>Николай</span>, я
+					Привет! Меня зовут <br />
+					<span>Николай</span>, я
 				</h1>
 			) : (
 				<h1>
-					Hey! my name is <span>Nikolay</span>, i'm
+					Hey! my name is <br />
+					<span>Nikolay</span>, i'm
 				</h1>
 			)}
 			<h2>
