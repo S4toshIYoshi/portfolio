@@ -5,7 +5,7 @@ export const ABOUT_BRIEFLY: IAboutText = {
 	nameEn: 'Nikolay Kroshechkin',
 	descriptionRu: [
 		'Разработчик с глубокими знаниями JavaScript/TypeScript, React, функционального и объектно ориентированного программирования.',
-		'Получаю профильное образование, занимаюсь frontend-разработкой. Так же есть не коммерческий опыт с языками С, C++ и С#.'
+		'Получаю профильное образование, занимаюсь frontend-разработкой. Также есть некоммерческий опыт с языками С, C++ и С#.'
 	],
 	descriptionEn: [
 		'Developer with deep knowledge of JavaScript/TypeScript, React, functional and object oriented programming.',
