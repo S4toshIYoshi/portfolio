@@ -22,7 +22,7 @@ const RecentProjects = () => {
 			<div className={style.header}>
 				<Heading>{headingText}</Heading>
 				<Button className={style.button}>
-					<Link to='/projects' style={{ color: '#fff' }}>
+					<Link to='./projects' style={{ color: '#fff' }}>
 						{buttonText}
 					</Link>
 				</Button>

@@ -27,7 +27,7 @@ const Header = () => {
 				<HeadingHeader />
 				<div className={style.button}>
 					<Button>
-						<Link to='/contact' style={{ color: '#fff' }}>
+						<Link to='./contact' style={{ color: '#fff' }}>
 							{language === 'RU' ? 'Связаться' : 'Contact'}
 						</Link>
 					</Button>

@@ -12,3 +12,5 @@ export const ABOUT_BRIEFLY: IAboutText = {
 		'I get a specialized education, I am engaged in frontend development. I also have non-commercial experience with C, C++ and C#.'
 	]
 };
+
+export const ABOUT_ME = {};
