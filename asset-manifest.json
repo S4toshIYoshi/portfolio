@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.dbb9dc85.css",
-    "main.js": "/portfolio/static/js/main.b2d6661c.js",
+    "main.css": "/portfolio/static/css/main.bc10eda9.css",
+    "main.js": "/portfolio/static/js/main.9010f064.js",
     "static/media/heading.png": "/portfolio/static/media/heading.5b2b68c4cb78f8eae13d.png",
     "static/media/feedBack.png": "/portfolio/static/media/feedBack.927901d3c09693cadbc3.png",
     "static/media/gallery.png": "/portfolio/static/media/gallery.afdbd7a11fafcbcaacb6.png",
     "static/media/movieApp.png": "/portfolio/static/media/movieApp.ac743bb82b9f0f0cdafc.png",
     "static/media/Kroshechkin_Nikolay.pdf": "/portfolio/static/media/Kroshechkin_Nikolay.7f37cb48454e928f58d4.pdf",
     "index.html": "/portfolio/index.html",
-    "main.dbb9dc85.css.map": "/portfolio/static/css/main.dbb9dc85.css.map",
-    "main.b2d6661c.js.map": "/portfolio/static/js/main.b2d6661c.js.map"
+    "main.bc10eda9.css.map": "/portfolio/static/css/main.bc10eda9.css.map",
+    "main.9010f064.js.map": "/portfolio/static/js/main.9010f064.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbb9dc85.css",
-    "static/js/main.b2d6661c.js"
+    "static/css/main.bc10eda9.css",
+    "static/js/main.9010f064.js"
   ]
 }
