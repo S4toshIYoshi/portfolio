@@ -5,6 +5,7 @@ import style from './MainButton.module.scss';
 import resume from '../../data/download/Kroshechkin_Nikolay.pdf';
 import { LanguageContext } from '../../providers/LanguageProvider';
 import Description from '../../UI/Description';
+import ButtonLink from '../../UI/ButtonLink';
 
 type TMainButton = {
 	contact?: boolean;
@@ -17,23 +18,21 @@ const MainButton: FC<TMainButton> = ({ contact = true, download = true }) => {
 	return (
 		<div className={style.button}>
 			{contact && (
-				<Link to='/portfolio/contact' style={{ color: '#fff' }}>
-					<Button onClick={() => window.scroll(0, 0)}>
-						{language === 'RU' ? 'Связаться' : 'Contact'}
-					</Button>
-				</Link>
+				<ButtonLink url='/portfolio/contact'>
+					{language === 'RU' ? 'Связаться' : 'Contact'}
+				</ButtonLink>
 			)}
 			{download && (
 				<div className={style.download}>
-					<Button>
-						<a
-							href={resume}
-							download='Nikolay_Kroshechkin'
-							style={{ color: '#fff' }}
-						>
+					<a
+						href={resume}
+						download='Nikolay_Kroshechkin'
+						style={{ color: '#fff' }}
+					>
+						<Button>
 							{language === 'RU' ? 'Скачать резюме' : 'download resume'}
-						</a>
-					</Button>
+						</Button>
+					</a>
 					<Description>.pdf</Description>
 				</div>
 			)}

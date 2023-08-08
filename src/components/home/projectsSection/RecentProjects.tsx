@@ -6,6 +6,7 @@ import Button from '../../../UI/Button';
 import CardProject from '../../cardProject/CardProject';
 import { PROJECTS } from '../../../data/myProjects';
 import { Link } from 'react-router-dom';
+import ButtonLink from '../../../UI/ButtonLink';
 
 type Props = {};
 
@@ -21,11 +22,9 @@ const RecentProjects = () => {
 		<section className={style.section}>
 			<div className={style.header}>
 				<Heading>{headingText}</Heading>
-				<Button className={style.button} onClick={() => window.scroll(0, 0)}>
-					<Link to='./projects' style={{ color: '#fff' }}>
-						{buttonText}
-					</Link>
-				</Button>
+				<ButtonLink url='./projects' className={style.button}>
+					{buttonText}
+				</ButtonLink>
 			</div>
 			<div className={style.projects}>
 				{PROJECTS.map(el => (
@@ -41,14 +40,9 @@ const RecentProjects = () => {
 						img={el.img}
 					/>
 				))}
-				<Button
-					className={style.buttonMobile}
-					onClick={() => window.scroll(0, 0)}
-				>
-					<Link to='./projects' style={{ color: '#fff' }}>
-						{buttonText}
-					</Link>
-				</Button>
+				<ButtonLink url='./projects' className={style.buttonMobile}>
+					{buttonText}
+				</ButtonLink>
 			</div>
 		</section>
 	);

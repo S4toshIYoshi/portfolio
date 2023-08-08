@@ -3,7 +3,7 @@ import style from './CardProject.module.scss';
 import MiniCard from './MiniCard';
 import Marking from '../../UI/Marking';
 import Description from '../../UI/Description';
-import Button from '../../UI/Button';
+import ButtonLink from '../../UI/ButtonLink';
 import { LanguageContext } from '../../providers/LanguageProvider';
 import { ICardProject } from '../../types/project.interface';
 import Card from '../../UI/Card';
@@ -34,11 +34,9 @@ const CardProject: FC<ICardProject> = ({
 				<Marking>{`project ${number}`}</Marking>
 				<HeadingCard>{heading}</HeadingCard>
 				<Description className={style.description}>{description}</Description>
-				<Button>
-					<Link to={`./projects/${slug}`} style={{ color: '#fff' }}>
-						{language === 'RU' ? 'Подробнее' : 'View Detals'}
-					</Link>
-				</Button>
+				<ButtonLink url={`./projects/${slug}`}>
+					{language === 'RU' ? 'Подробнее' : 'View Detals'}
+				</ButtonLink>
 			</div>
 		</Card>
 	);
