@@ -1,12 +1,14 @@
-import React, { ReactNode } from 'react';
+import React, { FC, ReactNode } from 'react';
 import style from './Heading.module.scss';
+import cn from 'classnames';
 
 type Props = {
+	className?: string;
 	children: ReactNode;
 };
 
-const Heading = ({ children }: Props) => {
-	return <h2 className={style.heading}>{children}</h2>;
+const Heading: FC<Props> = ({ children, className }) => {
+	return <h2 className={cn(style.heading, className)}>{children}</h2>;
 };
 
 export default Heading;
