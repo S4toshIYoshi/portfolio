@@ -17,11 +17,11 @@ const MainButton: FC<TMainButton> = ({ contact = true, download = true }) => {
 	return (
 		<div className={style.button}>
 			{contact && (
-				<Button onClick={() => window.scroll(0, 0)}>
-					<Link to='/portfolio/contact' style={{ color: '#fff' }}>
+				<Link to='/portfolio/contact' style={{ color: '#fff' }}>
+					<Button onClick={() => window.scroll(0, 0)}>
 						{language === 'RU' ? 'Связаться' : 'Contact'}
-					</Link>
-				</Button>
+					</Button>
+				</Link>
 			)}
 			{download && (
 				<div className={style.download}>
