@@ -13,7 +13,7 @@ const RecentProjects = () => {
 	const { language } = useContext(LanguageContext);
 
 	const headingText: string =
-		language === 'RU' ? 'Недавние преокты' : 'Recent projects';
+		language === 'RU' ? 'Недавние проекты' : 'Recent projects';
 
 	const buttonText: string = language === 'RU' ? 'посмотреть все' : 'view all';
 
