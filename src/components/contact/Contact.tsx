@@ -7,7 +7,7 @@ const Contact = () => {
 		<main className={style.contact}>
 			<AvatarSection />
 			<div style={{ marginTop: '60px' }}>
-				<MainButton />
+				<MainButton contact={false} />
 			</div>
 		</main>
 	);

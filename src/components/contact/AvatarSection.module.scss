@@ -19,6 +19,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	min-width: 310px;
 
 	& li {
 		color: #fff;
@@ -31,5 +32,11 @@
 		& a {
 			color: #fff;
 		}
+	}
+}
+
+@media (min-width: 600px) {
+	.links {
+		min-width: auto;
 	}
 }

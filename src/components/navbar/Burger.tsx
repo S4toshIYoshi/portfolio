@@ -22,7 +22,7 @@ const Burger = (props: Props) => {
 			<div className={style.endPosition}>
 				<div className={cn(style.field, isOpen ? style.open : style.close)}>
 					<div className={style.wrapper}>
-						<Menu />
+						<Menu action={setIsOpen} />
 						<Switcher
 							first='RU'
 							last='EN'

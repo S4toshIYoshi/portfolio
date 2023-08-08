@@ -20,7 +20,7 @@ const AboutSection = () => {
 		<section className={style.aboutSection}>
 			<div className={style.content}>
 				<Link to='./about'>
-					<ButtonVector>
+					<ButtonVector onClick={() => window.scroll(0, 0)}>
 						{language === 'RU' ? 'Узнать больше' : 'learn more'}
 					</ButtonVector>
 				</Link>

@@ -18,9 +18,9 @@ const Footer = () => {
 			<div className={style.heading}>
 				<Logo />
 				<div className={style.icons}>
-					{LINKS_ME.map(el => {
+					{LINKS_ME.map((el, idx) => {
 						return (
-							<a href={el.url} style={{ color: '#fff' }}>
+							<a key={idx} href={el.url} style={{ color: '#fff' }}>
 								<el.Icon />
 							</a>
 						);
@@ -32,7 +32,7 @@ const Footer = () => {
 				{LINKS_NAV.map(el => {
 					return (
 						<li key={el.slug}>
-							<Link to={el.url}>
+							<Link to={el.url} onClick={() => window.scroll(0, 0)}>
 								{language === 'EN' ? el.nameEN : el.nameRU}
 							</Link>
 						</li>
@@ -41,9 +41,9 @@ const Footer = () => {
 			</ul>
 
 			<div className={style.contact}>
-				{LINKS_FOOTER.map(el => {
+				{LINKS_FOOTER.map((el, idx) => {
 					return (
-						<div>
+						<div key={idx}>
 							<a href={el.url} style={{ color: '#fff' }}>
 								<el.Icon />
 							</a>{' '}

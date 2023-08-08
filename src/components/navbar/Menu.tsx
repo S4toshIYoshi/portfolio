@@ -2,10 +2,14 @@ import { NavLink } from 'react-router-dom';
 import { LINKS_NAV } from '../../data/links';
 
 import style from './Menu.module.scss';
-import { useContext } from 'react';
+import { Dispatch, FC, SetStateAction, useContext } from 'react';
 import { LanguageContext } from '../../providers/LanguageProvider';
 
-const Menu = () => {
+type TMenu = {
+	action?: Dispatch<SetStateAction<boolean>>;
+};
+
+const Menu: FC<TMenu> = ({ action }) => {
 	const { language } = useContext(LanguageContext);
 
 	return (
@@ -18,6 +22,7 @@ const Menu = () => {
 							className={({ isActive }) =>
 								isActive ? style.active : style.link
 							}
+							onClick={action ? () => action(false) : undefined}
 						>
 							{language === 'EN' ? el.nameEN : el.nameRU}
 						</NavLink>

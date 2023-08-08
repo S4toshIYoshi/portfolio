@@ -21,7 +21,7 @@ const RecentProjects = () => {
 		<section className={style.section}>
 			<div className={style.header}>
 				<Heading>{headingText}</Heading>
-				<Button className={style.button}>
+				<Button className={style.button} onClick={() => window.scroll(0, 0)}>
 					<Link to='./projects' style={{ color: '#fff' }}>
 						{buttonText}
 					</Link>
@@ -41,7 +41,14 @@ const RecentProjects = () => {
 						img={el.img}
 					/>
 				))}
-				<Button className={style.buttonMobile}>{buttonText}</Button>
+				<Button
+					className={style.buttonMobile}
+					onClick={() => window.scroll(0, 0)}
+				>
+					<Link to='./projects' style={{ color: '#fff' }}>
+						{buttonText}
+					</Link>
+				</Button>
 			</div>
 		</section>
 	);
