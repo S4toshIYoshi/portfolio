@@ -12,7 +12,7 @@ import MainButton from '../mainButton/MainButton';
 type Props = {};
 
 const About = (props: Props) => {
-	const [color, setColor] = useState<boolean>(false);
+	const [color, setColor] = useState<string>('#000');
 
 	return (
 		<main className={style.about}>
@@ -30,7 +30,13 @@ const About = (props: Props) => {
 				</Heading>
 				<Button
 					onClick={() => {
-						setColor(color ? false : true);
+						setColor(
+							color === '#000'
+								? '#118da8'
+								: color === '#118da8'
+								? '#191919'
+								: '#000'
+						);
 					}}
 				>
 					Switch color
@@ -44,7 +50,7 @@ const About = (props: Props) => {
 							key={idx}
 							Icon={el.icon}
 							text={el.text}
-							background={color ? '#118da8' : '#000'}
+							background={color}
 						/>
 					);
 				})}
