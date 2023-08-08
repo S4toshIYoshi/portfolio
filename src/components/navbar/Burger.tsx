@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Menu from './Menu';
 import style from './Burger.module.scss';
-import Footer from '../Footer';
 import Switcher from '../../UI/Switcher';
 import cn from 'classnames';
 

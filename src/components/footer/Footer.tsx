@@ -1,13 +1,14 @@
 import { useContext } from 'react';
 import style from './Footer.module.scss';
-import Logo from '../UI/Logo';
+import Logo from '../../UI/Logo';
 
 import { SiGmail, SiTelegram } from 'react-icons/si';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-import Description from '../UI/Description';
-import { LanguageContext } from '../providers/LanguageProvider';
-import { LINKS_NAV } from '../data/links';
+import Description from '../../UI/Description';
+import { LanguageContext } from '../../providers/LanguageProvider';
+import { LINKS_NAV } from '../../data/links';
+import { LINKS_FOOTER, LINKS_ME } from '../../data/feedback';
 
 const Footer = () => {
 	const { language } = useContext(LanguageContext);
@@ -17,9 +18,13 @@ const Footer = () => {
 			<div className={style.heading}>
 				<Logo />
 				<div className={style.icons}>
-					<SiGmail />
-					<SiTelegram />
-					<BsFillTelephoneFill />
+					{LINKS_ME.map(el => {
+						return (
+							<a href={el.url} style={{ color: '#fff' }}>
+								<el.Icon />
+							</a>
+						);
+					})}
 				</div>
 			</div>
 
@@ -36,18 +41,16 @@ const Footer = () => {
 			</ul>
 
 			<div className={style.contact}>
-				<div>
-					<SiGmail fill='#fff' />{' '}
-					<Description>nkroshechkin@gmail.com</Description>
-				</div>
-				<div>
-					<SiTelegram fill='#fff' /> <Description>@memphisusr</Description>
-				</div>
-
-				<div>
-					<BsFillTelephoneFill fill='#fff' />{' '}
-					<Description>+79012718378</Description>
-				</div>
+				{LINKS_FOOTER.map(el => {
+					return (
+						<div>
+							<a href={el.url} style={{ color: '#fff' }}>
+								<el.Icon />
+							</a>{' '}
+							<Description>{el.description}</Description>
+						</div>
+					);
+				})}
 			</div>
 		</footer>
 	);

@@ -1,4 +1,17 @@
 .button {
 	display: flex;
+	flex-direction: column;
 	gap: 30px;
+}
+
+.download {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+@media (min-width: 681px) {
+	.button {
+		flex-direction: row;
+	}
 }

@@ -22,12 +22,12 @@
 
 .button {
 	display: none;
-	column-gap: 30px;
 }
 
 .buttonModile {
 	display: flex;
-	column-gap: 30px;
+	align-items: center;
+	justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -35,10 +35,9 @@
 		flex-direction: row;
 	}
 	.button {
-		display: flex;
+		display: block;
 	}
 	.buttonModile {
 		display: none;
-		column-gap: 30px;
 	}
 }
