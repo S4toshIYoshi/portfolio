@@ -7,6 +7,9 @@ export interface IProject {
 	img?: string;
 	slug: string;
 	category: string[];
+	stack: string[];
+	url: string;
+	deploy?: string;
 }
 
 export interface ICardProject {
@@ -16,4 +19,7 @@ export interface ICardProject {
 	img?: string;
 	slug: string;
 	category: string[];
+	stack: string[];
+	url: string;
+	deploy?: string;
 }

@@ -4,7 +4,6 @@ import './globalStyle/index.css';
 import App from './App';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
-import { BrowserRouter } from 'react-router-dom';
 import LanguageProvider, {
 	LanguageContext
 } from './providers/LanguageProvider';
@@ -15,9 +14,7 @@ const Root: ReactDOM.Root = ReactDOM.createRoot(
 Root.render(
 	<React.StrictMode>
 		<LanguageProvider>
-			<BrowserRouter>
-				<App />
-			</BrowserRouter>
+			<App />
 		</LanguageProvider>
 	</React.StrictMode>
 );

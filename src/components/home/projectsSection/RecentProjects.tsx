@@ -38,6 +38,9 @@ const RecentProjects = () => {
 						heading={language === 'RU' ? el.headingRu : el.headingEn}
 						category={el.category}
 						img={el.img}
+						stack={el.stack}
+						url={el.url}
+						deploy={el.deploy}
 					/>
 				))}
 				<ButtonLink url='./projects' className={style.buttonMobile}>

@@ -1,4 +1,4 @@
-type TSkills = {
+export type TSkills = {
 	skill: string;
 	color: string;
 	colorText?: string;
@@ -102,5 +102,18 @@ export const SKILLS: TSkills[] = [
 		skill: 'Algoritms',
 		colorText: '#000',
 		color: '#efd81f'
+	},
+	{
+		skill: 'NestJS',
+		color: '#d8224b'
+	},
+	{
+		skill: 'Prisma',
+		color: '#e6e6e6 ',
+		colorText: '#000'
+	},
+	{
+		skill: 'PostgreSQL',
+		color: '#31638d'
 	}
 ];

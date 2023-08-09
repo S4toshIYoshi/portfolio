@@ -9,7 +9,6 @@ const Projects = () => {
 
 	return (
 		<main className={style.projects}>
-			{' '}
 			{ALL_PROJECTS.map(el => (
 				<CardProject
 					key={el.slug}
@@ -19,6 +18,9 @@ const Projects = () => {
 					heading={language === 'RU' ? el.headingRu : el.headingEn}
 					category={el.category}
 					img={el.img}
+					stack={el.stack}
+					url={el.url}
+					deploy={el.deploy}
 				/>
 			))}
 		</main>

@@ -4,6 +4,7 @@ import Heading from '../../../UI/Heading';
 import style from './SkillSetSection.module.scss';
 import { SKILLS } from '../../../data/skills';
 import { LanguageContext } from '../../../providers/LanguageProvider';
+import SkillCard from '../../../UI/SkillCard';
 
 type Props = {};
 
@@ -15,18 +16,14 @@ const SkillSetSection = (props: Props) => {
 			<Card>
 				<Heading>{language === 'RU' ? 'Набор Навыков' : 'Skill Set'}</Heading>
 				<div className={style.skills}>
-					{SKILLS.map(el => {
+					{SKILLS.map((el, idx) => {
 						return (
-							<div
-								key={el.skill}
-								className={style.cardSkills}
-								style={{
-									background: `${el.color}`,
-									color: el.colorText ? el.colorText : '#FFF'
-								}}
-							>
-								{el.skill}
-							</div>
+							<SkillCard
+								key={idx}
+								color={el.color}
+								skill={el.skill}
+								colorText={el.colorText}
+							/>
 						);
 					})}
 				</div>
