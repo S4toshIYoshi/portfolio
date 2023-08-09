@@ -7,7 +7,6 @@ import { LanguageContext } from '../../providers/LanguageProvider';
 import { ICardProject } from '../../types/project.interface';
 import Card from '../UI/Card';
 import HeadingCard from './HeadingCard';
-import { Link, useLocation } from 'react-router-dom';
 import { SKILLS, TSkills } from '../../data/skills';
 import { BsGithub } from 'react-icons/bs';
 import SkillCard from '../UI/SkillCard';
@@ -64,9 +63,11 @@ const CardProject: FC<ICardProject> = ({
 						<BsGithub />
 					</ButtonLink>
 					{!!deploy ? (
-						<ButtonLink url={deploy}>
-							{language === 'RU' ? 'Перейти На Сайт' : 'Go To Website'}
-						</ButtonLink>
+						<a href={deploy} target='_blank'>
+							<Button>
+								{language === 'RU' ? 'Перейти На Сайт' : 'Go To Website'}
+							</Button>
+						</a>
 					) : (
 						<Button>
 							{language === 'RU' ? 'В Разработке' : 'In Developing'}
