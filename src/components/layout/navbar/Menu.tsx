@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
-import { LINKS_NAV } from '../../data/links';
+import { LINKS_NAV } from '../../../data/links';
 
 import style from './Menu.module.scss';
 import { Dispatch, FC, SetStateAction, useContext } from 'react';
-import { LanguageContext } from '../../providers/LanguageProvider';
+import { LanguageContext } from '../../../providers/LanguageProvider';
 
 type TMenu = {
 	action?: Dispatch<SetStateAction<boolean>>;

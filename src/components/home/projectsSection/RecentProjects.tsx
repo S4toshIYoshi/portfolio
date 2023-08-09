@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import style from './RecentProjects.module.scss';
-import Heading from '../../../UI/Heading';
+import Heading from '../../UI/Heading';
 import { LanguageContext } from '../../../providers/LanguageProvider';
-import Button from '../../../UI/Button';
+import Button from '../../UI/Button';
 import CardProject from '../../cardProject/CardProject';
 import { PROJECTS } from '../../../data/myProjects';
 import { Link } from 'react-router-dom';
-import ButtonLink from '../../../UI/ButtonLink';
+import ButtonLink from '../../UI/ButtonLink';
 
 type Props = {};
 

@@ -6,9 +6,9 @@ import { SiGmail, SiTelegram } from 'react-icons/si';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import Description from '../../UI/Description';
-import { LanguageContext } from '../../providers/LanguageProvider';
-import { LINKS_NAV } from '../../data/links';
-import { LINKS_FOOTER, LINKS_ME } from '../../data/feedback';
+import { LanguageContext } from '../../../providers/LanguageProvider';
+import { LINKS_NAV } from '../../../data/links';
+import { LINKS_FOOTER, LINKS_ME } from '../../../data/feedback';
 
 const Footer = () => {
 	const { language } = useContext(LanguageContext);

@@ -2,7 +2,7 @@ import { FC, ForwardRefExoticComponent, ReactNode, RefAttributes } from 'react';
 import cn from 'classnames';
 import style from './Button.module.scss';
 import { Link, LinkProps } from 'react-router-dom';
-import { IButtonLink } from '../types/button.interface';
+import { IButtonLink } from '../../types/button.interface';
 import Button from './Button';
 
 const ButtonLink: FC<IButtonLink> = ({ children, className, url }) => {

@@ -10,8 +10,11 @@
 	padding: 40px;
 }
 
-.wrapperCategory {
+.wrapperStack {
 	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
 	gap: 10px;
 }
 
@@ -19,9 +22,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-width: 400px;
+	min-width: 300px;
 	width: 100%;
-	max-width: 400px;
+	max-width: 300px;
 	height: auto;
 
 	border-radius: 32px;
@@ -68,6 +71,8 @@
 	}
 
 	.wrapperImg {
+		max-width: 350px;
+		min-width: 350px;
 		align-items: flex-start;
 		justify-content: flex-start;
 	}
@@ -82,5 +87,8 @@
 	}
 	.buttonWrapper {
 		flex-direction: row;
+	}
+	.wrapperStack {
+		justify-content: flex-start;
 	}
 }

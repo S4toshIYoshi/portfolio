@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import cn from 'classnames';
 import style from './ButtonVector.module.scss';
-import { IButton } from '../types/button.interface';
-import icon from '../images/vectorRight.png';
+import { IButton } from '../../types/button.interface';
+import icon from '../../assets/images/vectorRight.png';
 import Marking from './Marking';
 
 const ButtonVector: FC<IButton> = ({ children, className, ...rest }) => {

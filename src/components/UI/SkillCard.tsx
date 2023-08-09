@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { TSkills } from '../data/skills';
+import { TSkills } from '../../data/skills';
 
 const SkillCard: FC<TSkills> = ({ skill, color, colorText }) => {
 	return (

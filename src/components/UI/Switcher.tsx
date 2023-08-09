@@ -1,7 +1,7 @@
 import React, { FC, MouseEventHandler, useContext, useState } from 'react';
 import style from './Switcher.module.scss';
 import cn from 'classnames';
-import { LanguageContext } from '../providers/LanguageProvider';
+import { LanguageContext } from '../../providers/LanguageProvider';
 
 interface ISwitcher {
 	first: string;

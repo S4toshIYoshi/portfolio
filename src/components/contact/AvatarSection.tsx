@@ -1,8 +1,8 @@
 import avatar from '../../images/heading.png';
 import style from './AvatarSection.module.scss';
 import { LINKS_ME } from '../../data/feedback';
-import Description from '../../UI/Description';
-import Card from '../../UI/Card';
+import Description from '../UI/Description';
+import Card from '../UI/Card';
 
 const AvatarSection = () => {
 	return (

@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
-import Description from '../../UI/Description';
+import Description from '../UI/Description';
 import { ABOUT_CARDS, ABOUT_ME } from '../../data/about';
 import style from './About.module.scss';
 import CardQuestion from './CardQuestion';
 import { ICardsQuestion } from '../../types/about.interface';
-import Heading from '../../UI/Heading';
-import Button from '../../UI/Button';
-import MainButton from '../mainButton/MainButton';
+import Heading from '../UI/Heading';
+import Button from '../UI/Button';
+import MainButton from '../shared/mainButton/MainButton';
 
 type Props = {};
 

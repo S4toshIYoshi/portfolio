@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 import style from './AboutSection.module.scss';
 import image from '../../../images/feedBack.png';
-import ButtonVector from '../../../UI/ButtonVector';
-import Heading from '../../../UI/Heading';
-import Description from '../../../UI/Description';
+import ButtonVector from '../../UI/ButtonVector';
+import Heading from '../../UI/Heading';
+import Description from '../../UI/Description';
 import { LanguageContext } from '../../../providers/LanguageProvider';
 import { ABOUT_BRIEFLY } from '../../../data/about';
 import { Link } from 'react-router-dom';

@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
-import Card from '../../../UI/Card';
-import Heading from '../../../UI/Heading';
+import Card from '../../UI/Card';
+import Heading from '../../UI/Heading';
 import style from './SkillSetSection.module.scss';
 import { SKILLS } from '../../../data/skills';
 import { LanguageContext } from '../../../providers/LanguageProvider';
-import SkillCard from '../../../UI/SkillCard';
+import SkillCard from '../../UI/SkillCard';
 
 type Props = {};
 

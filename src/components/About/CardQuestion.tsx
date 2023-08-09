@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from 'react';
 import { IconType } from 'react-icons';
-import Description from '../../UI/Description';
+import Description from '../UI/Description';
 import style from './CardQuestion.module.scss';
 
 type Props = {

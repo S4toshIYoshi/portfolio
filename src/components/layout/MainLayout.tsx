@@ -1,8 +1,8 @@
-import Footer from '../components/footer/Footer';
-import NavBar from '../components/navbar/NavBar';
+import Footer from './footer/Footer';
+import NavBar from './navbar/NavBar';
 import { Outlet } from 'react-router-dom';
 import style from './MainLayout.module.scss';
-import UpButton from '../UI/UpButton';
+import UpButton from './UpButton';
 
 const MainLayout = () => {
 	return (

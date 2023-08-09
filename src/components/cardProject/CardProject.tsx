@@ -1,17 +1,17 @@
 import React, { FC, useContext } from 'react';
 import style from './CardProject.module.scss';
-import Marking from '../../UI/Marking';
-import Description from '../../UI/Description';
-import ButtonLink from '../../UI/ButtonLink';
+import Marking from '../UI/Marking';
+import Description from '../UI/Description';
+import ButtonLink from '../UI/ButtonLink';
 import { LanguageContext } from '../../providers/LanguageProvider';
 import { ICardProject } from '../../types/project.interface';
-import Card from '../../UI/Card';
+import Card from '../UI/Card';
 import HeadingCard from './HeadingCard';
 import { Link, useLocation } from 'react-router-dom';
 import { SKILLS, TSkills } from '../../data/skills';
 import { BsGithub } from 'react-icons/bs';
-import SkillCard from '../../UI/SkillCard';
-import Button from '../../UI/Button';
+import SkillCard from '../UI/SkillCard';
+import Button from '../UI/Button';
 
 const CardProject: FC<ICardProject> = ({
 	number,
@@ -45,7 +45,7 @@ const CardProject: FC<ICardProject> = ({
 				<img src={img} alt={slug} />
 			</div>
 			<div className={style.content}>
-				<div className={style.wrapperCategory}>
+				<div className={style.wrapperStack}>
 					{skills.map((el, idx) => (
 						<SkillCard
 							key={idx}

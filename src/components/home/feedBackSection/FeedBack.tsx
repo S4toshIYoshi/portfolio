@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 import style from './FeedBack.module.scss';
-import Card from '../../../UI/Card';
-import Marking from '../../../UI/Marking';
+import Card from '../../UI/Card';
+import Marking from '../../UI/Marking';
 import { LanguageContext } from '../../../providers/LanguageProvider';
 import { TData } from './data.type';
-import Heading from '../../../UI/Heading';
+import Heading from '../../UI/Heading';
 import { SiGmail, SiTelegram } from 'react-icons/si';
 import { BsFillTelephoneFill } from 'react-icons/bs';
-import Description from '../../../UI/Description';
-import Button from '../../../UI/Button';
+import Description from '../../UI/Description';
+import Button from '../../UI/Button';
 
 const FeedBack = () => {
 	const { language } = useContext(LanguageContext);

@@ -1,4 +1,4 @@
-import MainButton from '../mainButton/MainButton';
+import MainButton from '../shared/mainButton/MainButton';
 import AvatarSection from './AvatarSection';
 import style from './Contact.module.scss';
 
