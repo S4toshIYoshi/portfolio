@@ -1,4 +1,4 @@
-import avatar from '../../images/heading.png';
+import avatar from '../../assets/images/heading.png';
 import style from './AvatarSection.module.scss';
 import { LINKS_ME } from '../../data/feedback';
 import Description from '../UI/Description';

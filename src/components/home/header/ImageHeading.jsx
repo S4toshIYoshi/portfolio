@@ -1,6 +1,4 @@
-import { useContext } from 'react';
-import image from '../../../images/heading.png';
-import { LanguageContext } from '../../../providers/LanguageProvider';
+import image from '../../../assets/images/heading.png';
 import style from './ImageHeading.module.scss';
 
 const ImageHeading = () => {

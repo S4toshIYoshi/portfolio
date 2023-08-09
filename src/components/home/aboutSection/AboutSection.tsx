@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import style from './AboutSection.module.scss';
-import image from '../../../images/feedBack.png';
+import image from '../../../assets/images/feedBack.png';
 import ButtonVector from '../../UI/ButtonVector';
 import Heading from '../../UI/Heading';
 import Description from '../../UI/Description';

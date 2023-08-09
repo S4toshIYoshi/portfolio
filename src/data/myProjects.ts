@@ -1,12 +1,12 @@
 import { IProject } from '../types/project.interface';
-import moveApp from '../images/movieApp.png';
-import gallery from '../images/gallery.png';
-import yanki from '../images/yanki.png';
-import ojjo from '../images/ojjo.png';
-import welbex from '../images/welbex.png';
-import develops from '../images/develops.png';
-import backendECom from '../images/backendE-com.png';
-import gameShopReact from '../images/gameShopReact.png';
+import moveApp from '../assets/images/movieApp.png';
+import gallery from '../assets/images/gallery.png';
+import yanki from '../assets/images/yanki.png';
+import ojjo from '../assets/images/ojjo.png';
+import welbex from '../assets/images/welbex.png';
+import develops from '../assets/images/develops.png';
+import backendECom from '../assets/images/backendE-com.png';
+import gameShopReact from '../assets/images/gameShopReact.png';
 
 export const ALL_PROJECTS: IProject[] = [
 	{

@@ -1,14 +1,9 @@
 import { IconType } from 'react-icons';
 import { SlSocialVkontakte } from 'react-icons/sl';
-import {
-	BsTelegram,
-	BsDiscord,
-	BsFillTelephoneFill,
-	BsTelephone
-} from 'react-icons/bs';
+import { BsTelegram, BsDiscord, BsTelephone } from 'react-icons/bs';
 import { AiFillGithub } from 'react-icons/ai';
 import { BiLogoGmail } from 'react-icons/bi';
-import { SiCodewars, SiGmail } from 'react-icons/si';
+import { SiCodewars } from 'react-icons/si';
 
 export interface ILinkFeedBack {
 	Icon: IconType;
