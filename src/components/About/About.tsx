@@ -12,8 +12,6 @@ import MainButton from '../shared/mainButton/MainButton';
 type Props = {};
 
 const About = (props: Props) => {
-	const [color, setColor] = useState<string>('#000');
-
 	return (
 		<main className={style.about}>
 			<Heading>О себе</Heading>
@@ -26,33 +24,13 @@ const About = (props: Props) => {
 			</Button>
 			<div className={style.wrapper}>
 				<Heading>
-					Почему <span style={{ color: '#118da8' }}>именно я</span>?
+					Почему я <span style={{ color: '#118da8' }}>отличный кандидат</span>?
 				</Heading>
-				<Button
-					onClick={() => {
-						setColor(
-							color === '#000'
-								? '#118da8'
-								: color === '#118da8'
-								? '#191919'
-								: '#000'
-						);
-					}}
-				>
-					Switch color
-				</Button>
 			</div>
 
 			<div className={style.wrapperQuestion}>
 				{ABOUT_CARDS.map((el: ICardsQuestion, idx: number) => {
-					return (
-						<CardQuestion
-							key={idx}
-							Icon={el.icon}
-							text={el.text}
-							background={color}
-						/>
-					);
+					return <CardQuestion key={idx} Icon={el.icon} text={el.text} />;
 				})}
 			</div>
 

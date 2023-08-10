@@ -12,7 +12,7 @@ export const ALL_PROJECTS: IProject[] = [
 	{
 		number: 9,
 		headingRu: 'Онлайн Галерея',
-		headingEn: 'Online gallery',
+		headingEn: 'Online Gallery',
 		descriptionRu:
 			'Этот сайт предлагает удобный и интуитивно понятный минималистичный интерфейс, который позволяет любителям искусства легко находить и наслаждаться произведениями искусства из разных эпох и жанров. Тестовое задание Framework Team',
 		descriptionEn:
@@ -53,8 +53,8 @@ export const ALL_PROJECTS: IProject[] = [
 	},
 	{
 		number: 6,
-		headingRu: 'Маркетплейс backend часть',
-		headingEn: 'Marketplace backend part',
+		headingRu: 'Маркетплейс Backend часть',
+		headingEn: 'Marketplace Backend part',
 		descriptionRu:
 			'Использовалась микро сервисная архитектура работа с PostgreSql с помощью Prisma. Реализованно получение товараов, изменение товаров, авторизация, коментарии, получение и изменение категорий, поиск по категориям и имени.',
 		descriptionEn:
@@ -70,7 +70,7 @@ export const ALL_PROJECTS: IProject[] = [
 	{
 		number: 5,
 		headingRu: 'Клон твиттера',
-		headingEn: 'twitter-clone',
+		headingEn: 'twitter clone',
 		descriptionRu: 'Командный проект',
 		descriptionEn: 'team project',
 		slug: 'twitter-clone',
@@ -81,10 +81,10 @@ export const ALL_PROJECTS: IProject[] = [
 	},
 	{
 		number: 4,
-		headingRu: 'Поиск фильмов',
-		headingEn: 'Movie search',
+		headingRu: 'Поиск Фильмов',
+		headingEn: 'Movie Search',
 		descriptionRu:
-			'В приложении есть подборки популярных фильмов, топы, поиск по категориям и уникальная функция которая подбирает случайный фильм. Также в приложении удобнйы адаптивный интерфес и отличны дизан',
+			'В приложении есть подборки популярных фильмов, топы, поиск по категориям и уникальная функция которая подбирает случайный фильм. Также в приложении удобнйы адаптивный интерфес и отличнйы дизайн',
 		descriptionEn:
 			'The application has selections of popular movies, tops, search by category and a unique feature that selects a random movie. Also, the application has a convenient adaptive interface and excellent design.',
 		slug: 'movie-app',

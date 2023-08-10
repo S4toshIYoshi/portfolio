@@ -1,7 +1,7 @@
 {
 	"homepage": "https://s4toshiyoshi.github.io/portfolio/",
 	"name": "kroshechkin-portfolio",
-	"version": "0.1.0",
+	"version": "0.2.4",
 	"private": true,
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.9.5",

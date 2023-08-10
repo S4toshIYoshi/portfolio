@@ -6,12 +6,11 @@ import style from './CardQuestion.module.scss';
 type Props = {
 	Icon: IconType;
 	text: string;
-	background?: string;
 };
 
-const CardQuestion: FC<Props> = ({ Icon, text, background }) => {
+const CardQuestion: FC<Props> = ({ Icon, text }) => {
 	return (
-		<div className={style.card} style={{ background: `${background}` }}>
+		<div className={style.card}>
 			<Icon color='#fff' size={100} />
 			<Description className={style.text}>{text}</Description>
 		</div>

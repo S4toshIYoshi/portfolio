@@ -34,8 +34,8 @@ export const LINKS_ME: ILinkFeedBack[] = [
 	},
 	{
 		Icon: BiLogoGmail,
-		description: 'nkroshechkin@gmai.com',
-		url: 'mailto:nkroshechkin@gmai.com'
+		description: 'nkroshechkin@gmail.com',
+		url: 'mailto:nkroshechkin@gmail.com'
 	},
 	{
 		Icon: BsDiscord,
@@ -62,8 +62,8 @@ export const LINKS_FOOTER: ILinkFeedBack[] = [
 	},
 	{
 		Icon: BiLogoGmail,
-		description: 'nkroshechkin@gmai.com',
-		url: 'mailto:nkroshechkin@gmai.com'
+		description: 'nkroshechkin@gmail.com',
+		url: 'mailto:nkroshechkin@gmail.com'
 	},
 	{
 		Icon: BsTelephone,
