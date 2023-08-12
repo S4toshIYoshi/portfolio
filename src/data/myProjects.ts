@@ -7,8 +7,24 @@ import welbex from '../assets/images/welbex.png';
 import develops from '../assets/images/develops.png';
 import backendECom from '../assets/images/backendE-com.png';
 import gameShopReact from '../assets/images/gameShopReact.png';
+import findNumber from '../assets/images/findNumber.png';
 
 export const ALL_PROJECTS: IProject[] = [
+	{
+		number: 10,
+		headingRu: 'Игра Найди Число',
+		headingEn: 'Find the number game',
+		descriptionRu:
+			'Игра создана с 0 на нативном JS, HTMl, CSS, WebPack и анимаций написсаных мною. Без использования сторонних библиотек. Эта игра развивает: Произвольное внимание, Концентрацию и переключение внимания, Зрительное восприятие',
+		descriptionEn:
+			'The game was created from scratch on native JS, HTMl, CSS, WebPack. Without the use of third-party libraries. This game develops: Arbitrary attention, Concentration and switching of attention, Visual perception',
+		slug: 'find-number',
+		category: ['js app'],
+		img: findNumber,
+		stack: ['JavaScript', 'HTML', 'CSS', 'WebPack'],
+		url: 'https://github.com/S4toshIYoshi/gameNumber',
+		deploy: 'https://s4toshiyoshi.github.io/gameNumber/'
+	},
 	{
 		number: 9,
 		headingRu: 'Онлайн Галерея',
