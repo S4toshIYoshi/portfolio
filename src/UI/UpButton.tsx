@@ -9,10 +9,10 @@ const UpButton = () => {
 	window.onscroll = e => {
 		setDistance(distance + window.scrollY - distance);
 	};
-	let t: any;
+	let t: NodeJS.Timeout;
 
 	function up() {
-		let top = Math.max(
+		let top: number = Math.max(
 			document.body.scrollTop,
 			document.documentElement.scrollTop
 		);

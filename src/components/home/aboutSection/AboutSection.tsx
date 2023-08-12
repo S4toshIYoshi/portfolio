@@ -19,7 +19,7 @@ const AboutSection = () => {
 	return (
 		<section className={style.aboutSection}>
 			<div className={style.content}>
-				<Link to='/about'>
+				<Link to='./about'>
 					<ButtonVector>
 						{language === 'RU' ? 'Узнать больше' : 'learn more'}
 					</ButtonVector>

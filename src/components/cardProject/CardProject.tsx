@@ -35,7 +35,7 @@ const CardProject: FC<ICardProject> = ({
 				<HeadingCard>{heading}</HeadingCard>
 				<Description className={style.description}>{description}</Description>
 				<Button>
-					<Link to={`/projects/${slug}`} style={{ color: '#fff' }}>
+					<Link to={`./projects/${slug}`} style={{ color: '#fff' }}>
 						{language === 'RU' ? 'Подробнее' : 'View Detals'}
 					</Link>
 				</Button>
