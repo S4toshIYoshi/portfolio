@@ -158,6 +158,6 @@ export const ALL_PROJECTS: IProject[] = [
 
 export const PROJECTS: IProject[] = [
 	ALL_PROJECTS[0],
-	ALL_PROJECTS[2],
-	ALL_PROJECTS[5]
+	ALL_PROJECTS[1],
+	ALL_PROJECTS[6]
 ];
