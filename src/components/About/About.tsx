@@ -17,11 +17,6 @@ const About = (props: Props) => {
 			<Heading>О себе</Heading>
 			<Description>{ABOUT_ME.section_presentation}</Description>
 
-			<Button>
-				<a href='https://21-school.ru/' style={{ color: '#fff' }}>
-					Подробнее о школе 21
-				</a>
-			</Button>
 			<div className={style.wrapper}>
 				<Heading>
 					Почему я <span style={{ color: '#118da8' }}>отличный кандидат</span>?
