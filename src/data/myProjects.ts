@@ -138,21 +138,6 @@ export const ALL_PROJECTS: IProject[] = [
 		stack: ['HTML', 'CSS', 'JavaScript'],
 		url: 'https://github.com/S4toshIYoshi/OJJO-website',
 		deploy: 'https://s4toshiyoshi.github.io/OJJO-website/'
-	},
-	{
-		number: 1,
-		headingRu: 'Верстка сайта Yanki',
-		headingEn: 'Layout web-site Yanki',
-		descriptionRu:
-			'Мой первый не плохо сверстанны макет и один из первых проектов выложенных на git hub',
-		descriptionEn:
-			'My first not bad layout and one of the first projects posted on git hub',
-		slug: 'yanki',
-		category: ['Layout'],
-		img: yanki,
-		stack: ['HTML', 'CSS'],
-		url: 'https://github.com/S4toshIYoshi/WebSIteYankiTraing',
-		deploy: 'https://s4toshiyoshi.github.io/WebSIteYankiTraing/'
 	}
 ];
 
