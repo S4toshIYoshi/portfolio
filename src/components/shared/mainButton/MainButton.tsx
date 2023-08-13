@@ -1,8 +1,7 @@
 import { useContext, FC } from 'react';
-import { Link } from 'react-router-dom';
 import Button from '../../UI/Button';
 import style from './MainButton.module.scss';
-import resume from '../../../assets/download/Kroshechkin_Nikolay.pdf';
+import resume from '../../../assets/download/Cv_Kroshechkin_Nikolay.pdf';
 import { LanguageContext } from '../../../providers/LanguageProvider';
 import Description from '../../UI/Description';
 import ButtonLink from '../../UI/ButtonLink';
