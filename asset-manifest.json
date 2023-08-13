@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.53e34413.css",
-    "main.js": "/portfolio/static/js/main.c913d162.js",
+    "main.js": "/portfolio/static/js/main.5bcab48d.js",
     "static/media/heading.png": "/portfolio/static/media/heading.5b2b68c4cb78f8eae13d.png",
     "static/media/feedBack.png": "/portfolio/static/media/feedBack.927901d3c09693cadbc3.png",
     "static/media/gallery.png": "/portfolio/static/media/gallery.afdbd7a11fafcbcaacb6.png",
     "static/media/movieApp.png": "/portfolio/static/media/movieApp.ac743bb82b9f0f0cdafc.png",
     "static/media/welbex.png": "/portfolio/static/media/welbex.40b51882197f0498c512.png",
     "static/media/backendE-com.png": "/portfolio/static/media/backendE-com.adf84371a810daf1705e.png",
-    "static/media/Kroshechkin_Nikolay.pdf": "/portfolio/static/media/Kroshechkin_Nikolay.76cf2ff313e817bb1984.pdf",
     "static/media/ojjo.png": "/portfolio/static/media/ojjo.91ec89428932a6585138.png",
+    "static/media/Cv_Kroshechkin_Nikolay.pdf": "/portfolio/static/media/Cv_Kroshechkin_Nikolay.9e9c8a20f61b50b11595.pdf",
     "static/media/gameShopReact.png": "/portfolio/static/media/gameShopReact.885c07674b303b6d3425.png",
     "static/media/develops.png": "/portfolio/static/media/develops.f7793bc26b2a1b72776f.png",
     "static/media/findNumber.png": "/portfolio/static/media/findNumber.70a30cfc8fc95402f5bc.png",
     "index.html": "/portfolio/index.html",
     "main.53e34413.css.map": "/portfolio/static/css/main.53e34413.css.map",
-    "main.c913d162.js.map": "/portfolio/static/js/main.c913d162.js.map"
+    "main.5bcab48d.js.map": "/portfolio/static/js/main.5bcab48d.js.map"
   },
   "entrypoints": [
     "static/css/main.53e34413.css",
-    "static/js/main.c913d162.js"
+    "static/js/main.5bcab48d.js"
   ]
 }
